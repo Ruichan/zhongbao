@@ -15,25 +15,11 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+你还在苦于闲暇时间找不到路子捞外快？你还在每天早出晚归四处奔波只为填补家用？来平安众包一步帮你解决问题！
+随时随地、随心随意，只需打开平安众包，轻轻松松躺着赚钱！
+检验识别结果与校正图片内容是否一致，即可得丰富奖励积分，更有抽奖机会免费领！
+操作简单，积分日结，收益分分钟看得见，下载平安众包APP，幸福人生等着你！
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
