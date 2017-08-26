@@ -1,32 +1,8 @@
-## 众包项目
-
+# 平安众包项目
 
 <p align="center"><img src="./images/timg.jpeg" width="50%"></p>
 
-|         First Header        |         Second Header        |
-|:---------------------------:|:----------------------------:|
-|     Content from cell 1     |      Content from cell 2     |
-| Content in the first column | Content in the second column |
+## 众包介绍
 
-
-You can use the [editor on GitHub](https://github.com/Ruichan/zhongbao/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-你还在苦于闲暇时间找不到路子捞外快？你还在每天早出晚归四处奔波只为填补家用？来平安众包一步帮你解决问题！
-随时随地、随心随意，只需打开[平安众包](http://tech.pingan.com/)，轻轻松松躺着赚钱！
-检验识别结果与校正图片内容是否一致，即可得丰富奖励积分，更有抽奖机会免费领！
-操作简单，积分日结，收益分分钟看得见，下载平安众包APP，幸福人生等着你！
-
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Ruichan/zhongbao/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+平安众包是平安科技（深圳）有限公司旗下最新的一款帮助人们利用闲余时间赚钱的app，于2017年8月正式运营。用户通过下载平安众包app，完成校验图片任务后，待验证通过即可获得丰富奖励积分，更有免费的抽奖机会。
+  用户将众包积分兑换成万里通积分后可以通过登陆万里通官网或下载登陆壹钱包（http://www.wanlitong.com）APP进行积分消费。万里通积分具有充话费抵现、兑换礼品、充油卡以及积分购物等功能。
