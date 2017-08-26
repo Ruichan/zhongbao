@@ -1,6 +1,6 @@
 ## 众包项目
 
-![sahua](/images/timg.jpeg)
+![sahua](/images/timggg.jpeg)
 
 You can use the [editor on GitHub](https://github.com/Ruichan/zhongbao/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
