@@ -1,6 +1,6 @@
 ## 众包项目
 
-![sahua](./images/timg.jpeg){width=100}
+![sahua](./images/timg.jpeg){width="50%"}
 
 <img src="./images/timg.jpeg" width="48">
 
