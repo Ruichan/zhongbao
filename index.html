@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>平安众包</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  th, td {
+      text-align: center;
+  }  
+  .bg-dark {
+      background-color: #404040;
+  }    
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #f4511e;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #f4511e;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">平安众包</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#technology">技术支持</a></li>
+        <li><a href="#product">产品介绍</a></li>
+        <li><a href="#application">应用场景</a></li>
+        <li><a href="#contact">联系我们</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h3>平安众包 | Ping An Crowdsourcing</h3> 
+  <br>
+  <p>智能任务开放平台<br>—提供全套“AI录单”解决方案—</p> 
+</div>
+
+<div class="container">
+  <center>
+  <table width="100%" align="right">
+    <tbody>
+      <tr>
+        <td>专业</td>
+        <td>高效</td>
+        <td>脱敏</td>
+        <td>增值</td>        
+      </tr>
+    </tbody>
+  </table>
+  </center>  
+</div>
+
+<!-- Container (About Section) -->
+<div id="home" class="container-fluid text-center">
+
+  <h2>专注于平安OCR众包基础服务</h2>
+  <p>平安OCR众包是独特高效的AI录单解决方案，结合OCR识别技术和众包开放平台，将OCR识别后置信度较低的单据，脱敏处理后以任务形式，自动派发给愿意做任务的社会闲置人力并进行校验，是“机器识别+人工审核”的高精度、智能录入系统。</p>
+  <br>
+
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-ok logo-small"></span>
+      <h4>识别精度高</h4>
+      <p>OCR字段识别准确率<font color="#f4511e">90%</font><br>
+      <strong>OCR+众包</strong>字段识别准确率可超过<font color="#f4511e">  
+97%</font></p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-flash logo-small"></span>
+      <h4>识别速度快</h4>
+      <p>OCR识别速度高达<font color="#f4511e">0.6s/张</font>
+      <br>远超同类其他产品</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-star logo-small"></span>
+      <h4 style="color:#303030;">泛化能力强</h4>
+      <p>提取<font color="#f4511e">标准化流程</font>，<br>
+      加少量定制化工作，支持其他单据类型</p>
+    </div>
+  </div>
+      <br>
+      <hr>
+      <br>
+      <h2 class="text-center">“机器识别+人工审核”  极简流畅的产品体验</h2><br>      
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h5>独有模式，精度双重保障</h5>
+        </div>
+        <div class="panel-body">
+          <p>“机器识别+人工审核”模式</p>
+          <p>高精度识别结果</p>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h5>数据安全脱敏</h5>
+        </div>
+        <div class="panel-body">
+          <p>精准切割数据</p>
+          <p>数据脱敏零风险</p>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h5>单据海量处理</h5>
+        </div>
+        <div class="panel-body">
+          <p>毫秒级自动识别</p>
+          <p>全民动员的任务传播</p>
+          <p>高效完成数万/时的处理量</p>
+        </div>
+      </div>      
+    </div> 
+  </div>
+
+  <div class="row slideanim">  
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h5>极简流畅的操作</h5>
+        </div>
+        <div class="panel-body">
+          <p>巧妙设计交互</p>
+          <p>极简流畅的产品体验</p>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h5>高效保质的众包机制</h5>
+        </div>
+        <div class="panel-body">
+          <p>系统交叉校验任务准确率</p>
+          <p>防刷机制保障完成质量</p>
+          <p>用户评级制度</p>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h5>定制化服务</h5>
+        </div>
+        <div class="panel-body">
+          <p>形色单据</p>
+          <p>丰富场景</p>
+          <p>提供个性化需求解决方案</p>
+        </div>
+      </div>      
+    </div>         
+  </div>
+
+</div>
+
+<hr>
+
+
+<div id="technology" class="container-fluid text-center">
+    
+  <h2>平安OCR众包运行流程</h2>
+  <img src="img/fig1.png", width="90%" class="slideanim"/>  
+
+  <br><br>
+  <hr>
+  <br><br>
+
+  <div class="container">
+    <h2>平安OCR众包技术亮点</h2>
+    <img src="img/fig2.png", width="90%" class="slideanim"/>  
+
+    <br><br>
+    <h4><font color="#f4511e"> >> SSD算法实现票据位置截取与大角度矫正</font></h4>
+    <p>通过SSD算法，我们可以实现同张图片中的多张票据位置检测，及大角度矫正票据位置，以确保高识别率。</p>
+    <br>
+    <div class="row slideanim"> 
+      <div class="col-sm-6"> 
+        <img src="img/img1.png", width="90%" /><br>  
+      </div>
+      <div class="col-sm-6">       
+        <img src="img/img2.png", width="90%" /><br>  
+      </div>        
+    </div>
+
+    <br><br>
+    <h4><font color="#f4511e"> >> 专业的票面底色滤除技术</font></h4>
+    <p>票据底色滤除技术处理后的发票，字符笔划与常规技术得到的票面相比更加清晰突出，票据的边线更加完整。</p>
+    <br>
+    <div class="row slideanim"> 
+      <div class="col-sm-6"> 
+        <img src="img/img1.png", width="90%" /><br>  
+      </div>
+      <div class="col-sm-6">       
+        <img src="img/img2.png", width="90%" /><br>  
+      </div>        
+    </div>    
+
+    <br><br>
+    <h4><font color="#f4511e"> >> 精准的票据文字与打印文字分离技术</font></h4>
+    <p>将图像上的原有文本与打印文本区分开来，能够更加有效地定位发票位置，提取关键信息位置。</p>
+    <br>
+    <div class="row slideanim"> 
+      <div class="col-sm-6"> 
+        <img src="img/img1.png", width="90%" /><br>  
+      </div>
+      <div class="col-sm-6">       
+        <img src="img/img2.png", width="90%" /><br>  
+      </div>        
+    </div>        
+
+    <br><br>
+    <h4><font color="#f4511e"> >> 泛化模型的解决方案</font></h4>
+    <p>适用于大多数票据，如保单、发票、医疗单据等; 只需少量定制化模板，即可使用，无需数据标注与训练。</p>
+    <br>
+    <div class="row slideanim"> 
+      <div class="col-sm-6"> 
+        <img src="img/img1.png", width="90%" /><br>  
+      </div>
+      <div class="col-sm-6">       
+        <img src="img/img2.png", width="90%" /><br>  
+      </div>        
+    </div>        
+
+  </div>
+</div>
+
+<hr>
+
+<div id="product" class="container-fluid text-center">
+
+    <h2>平安众包产品简介</h2>
+    <p>平安众包作为一款辅助平安OCR众包进行任务分发以及录入的工具，其解决了传统人工录入存在效率低、作业量大、高误差率、人力成本高等问题。平安众包APP/平安众包任务分发平台将切割脱敏的图片任务随机发放给用户，用户校验时系统先返回算法识别结果，用户对算法识别结果进行修正。</p>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>平安众包APP</h2>
+    <h4>——录入辅助工具</h4>
+    <p>平安众包结合人工智能OCR技术，提速票据任务处理量最高至每小时数十万级别，致力于在为业务需求方提供个性化解决方案的同时，最大化地将社会大众的碎片时间转化为经济价值。</p>
+    <img src="img/app.png", width="90%" class="slideanim" />  
+
+    <br>    
+</div> 
+
+<hr>  
+
+<div class="container-fluid text-center">
+    <h2>平安众包任务分发平台</h2>
+    <h4>——PC端录入辅助平台</h4>
+    <p>平安众包任务分发平台是平安众包PC端的录入辅助平台，用户可以登录此平台完成做任务，兑积分，进行问题反馈，查看奖品记录等操作。</p>
+    <img src="img/pc.png", width="90%" class="slideanim" />  
+
+    <br>    
+</div> 
+
+<hr>
+
+<div id="application" class="container-fluid text-center">
+  <div class="row">
+    <div class="col-sm-7">  
+      <h2>应用场景：养老险AI录单</h2>
+      <p>场景简介：养老保险录单占医保理赔后台全流程操作作业量的60%，AI众包录单模式可提升73%出单效率，节省71%人力成本。
+在保证不透露单据信息的前提下，平安众包能够批量、准确、快速高效地提取票据所需信息，完成自动化数据录入过程。</p>
+    </div>
+    <div class="col-sm-5">      
+      <br><br>
+      <img src="img/pic.png", width="90%" class="slideanim" />  
+    </div>      
+  </div>
+    <br>    
+
+  <br>
+
+  <div class="row">
+    <div class="col-sm-7">  
+      <h2>应用场景：其他单据录入</h2>
+      <p>场景简介：大型企业、机构、政府部门、保险行业等都有海量的票据需要进行信息的采集、录入以及电子化归档。目前我国的票据数字化管理程度还比较低，大部分还是手工录入，人工建档。<br><br>
+      使用平安众包产品进行单据录入可以解决传统录入管理过程中存在的人工录入效率低、耗时、成本高、作业量大、正确率低等问题。用户可以自己选择时间、地点完成众包任务，实现海量单据高速分发、精准录入。</p>
+    </div>
+    <div class="col-sm-5">      
+      <br><br>
+      <img src="img/pic2.png", width="90%" class="slideanim" />  
+    </div>      
+  </div>
+    <br>    
+</div> 
+
+</div>
+
+
+<div id = "contact"  class="slideanim"> 
+ <img src="img/map.png" width="100%" />
+</div>
+
+<div class="container-fluid bg-dark">
+
+  <br>
+  <div class="row">
+  <font color="white">  
+    <div class="col-sm-4">
+      <p>公司简介</p>
+      <p class="small">平安科技成立于2008年，是平安集团旗下的全资子公司。公司总部设在深圳，北京、上海、成都、南京设有分公司，平安科技负责开发并运营集团的关键平台和服务，支持集团的保险、银行、投资和互联网业务高效发展，同时还是集团的技术孵化器，在云、人工智能和大数据方面有着强劲的研究和开发能力。</p>
+      <br>
+    </div>  
+    <div class="col-sm-4">
+      <p>联系我们</p>
+      <p class="small"><span class="glyphicon glyphicon-phone"></span> 0755-8867-1826</p>      
+      <p class="small"><span class="glyphicon glyphicon-envelope"></span> lijialin908@pingan.com.cn</p>      
+      <p class="small"><span class="glyphicon glyphicon-map-marker"></span> 广东省深圳市福田区园岭街道八卦三路平安大厦四楼</p>
+      <br>
+    </div>
+    <div class="col-sm-4">
+      <p>关注我们</p>    
+      <img src="img/pingan.png", width="120px" />
+    </div>
+  </font>    
+  </div>     
+</div>
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
